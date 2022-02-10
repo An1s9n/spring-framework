@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2019 the original author or authors.
+ * Copyright 2002-2022 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -54,7 +54,7 @@ public class SpelDocumentationTests extends AbstractExpressionTests {
 
 	static {
 		GregorianCalendar c = new GregorianCalendar();
-		c.set(1856, 7, 9);
+		c.set(1856, 6, 10);
 		tesla = new Inventor("Nikola Tesla", c.getTime(), "Serbian");
 		tesla.setPlaceOfBirth(new PlaceOfBirth("SmilJan"));
 		tesla.setInventions(new String[] { "Telephone repeater", "Rotating magnetic field principle",
@@ -113,9 +113,9 @@ public class SpelDocumentationTests extends AbstractExpressionTests {
 	@Test
 	public void testRootObject() throws Exception {
 		GregorianCalendar c = new GregorianCalendar();
-		c.set(1856, 7, 9);
+		c.set(1856, 6, 10);
 
-		//  The constructor arguments are name, birthday, and nationaltiy.
+		//  The constructor arguments are name, birthday, and nationality.
 		Inventor tesla = new Inventor("Nikola Tesla", c.getTime(), "Serbian");
 
 		ExpressionParser parser = new SpelExpressionParser();
@@ -299,7 +299,7 @@ public class SpelDocumentationTests extends AbstractExpressionTests {
 		assertThat(trueValue).isTrue();
 
 		// evaluates to true
-		expression =  "isMember('Nikola Tesla') or isMember('Albert Einstien')";
+		expression =  "isMember('Nikola Tesla') or isMember('Albert Einstein')";
 		trueValue = parser.parseExpression(expression).getValue(societyContext, Boolean.class);
 		assertThat(trueValue).isTrue();
 

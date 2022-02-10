@@ -1,5 +1,5 @@
 /*
- * Copyright 2002-2021 the original author or authors.
+ * Copyright 2002-2022 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -77,7 +77,7 @@ public class TestScenarioCreator {
 	 */
 	private static void setupRootContextObject(StandardEvaluationContext testContext) {
 		GregorianCalendar c = new GregorianCalendar();
-		c.set(1856, 7, 9);
+		c.set(1856, 6, 10);
 		Inventor tesla = new Inventor("Nikola Tesla", c.getTime(), "Serbian");
 		tesla.setPlaceOfBirth(new PlaceOfBirth("SmilJan"));
 		tesla.setInventions(new String[] { "Telephone repeater", "Rotating magnetic field principle",

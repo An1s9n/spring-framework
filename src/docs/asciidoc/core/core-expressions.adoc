@@ -206,7 +206,7 @@ create a boolean condition:
 ----
 	// Create and set a calendar
 	GregorianCalendar c = new GregorianCalendar();
-	c.set(1856, 7, 9);
+	c.set(1856, 6, 10);
 
 	// The constructor arguments are name, birthday, and nationality.
 	Inventor tesla = new Inventor("Nikola Tesla", c.getTime(), "Serbian");
@@ -226,7 +226,7 @@ create a boolean condition:
 ----
 	// Create and set a calendar
 	val c = GregorianCalendar()
-	c.set(1856, 7, 9)
+	c.set(1856, 6, 10)
 
 	// The constructor arguments are name, birthday, and nationality.
 	val tesla = Inventor("Nikola Tesla", c.time, "Serbian")
